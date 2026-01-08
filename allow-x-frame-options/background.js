@@ -25,14 +25,14 @@ async function updateRules(enable) {
             ]
         });
         // Set badge text
-        chrome.action.setBadgeText({ text: "ON" });
+        chrome.action.setBadgeText({ text: chrome.i18n.getMessage("badgeOn") });
         chrome.action.setBadgeBackgroundColor({ color: "#4caf50" });
     } else {
         await chrome.declarativeNetRequest.updateDynamicRules({
             removeRuleIds: [RULE_ID]
         });
         // Set badge text
-        chrome.action.setBadgeText({ text: "OFF" });
+        chrome.action.setBadgeText({ text: chrome.i18n.getMessage("badgeOff") });
         chrome.action.setBadgeBackgroundColor({ color: "#f44336" });
     }
 }

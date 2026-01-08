@@ -1,0 +1,26 @@
+{
+    "extensionName": {
+        "message": "允许 X-Frame-Options",
+        "description": "扩展名称"
+    },
+    "extensionDescription": {
+        "message": "允许您在通常被 X-Frame-Options 或 Content-Security-Policy 拦截的 iframe 中加载内容。",
+        "description": "扩展描述"
+    },
+    "statusEnabled": {
+        "message": "已启用",
+        "description": "开启状态下的状态文本"
+    },
+    "statusDisabled": {
+        "message": "已禁用",
+        "description": "关闭状态下的状态文本"
+    },
+    "badgeOn": {
+        "message": "开",
+        "description": "开启时的角标文本"
+    },
+    "badgeOff": {
+        "message": "关",
+        "description": "关闭时的角标文本"
+    }
+}

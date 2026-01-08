@@ -1,0 +1,26 @@
+{
+  "extensionName": {
+    "message": "Allow X-Frame-Options",
+    "description": "The name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Allows you to load content in iframes that are usually blocked by X-Frame-Options or Content-Security-Policy.",
+    "description": "The description of the extension."
+  },
+  "statusEnabled": {
+    "message": "Enabled",
+    "description": "Status text when the extension is active."
+  },
+  "statusDisabled": {
+    "message": "Disabled",
+    "description": "Status text when the extension is inactive."
+  },
+  "badgeOn": {
+    "message": "ON",
+    "description": "Badge text when enabled."
+  },
+  "badgeOff": {
+    "message": "OFF",
+    "description": "Badge text when disabled."
+  }
+}

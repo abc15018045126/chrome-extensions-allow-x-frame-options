@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const toggle = document.getElementById('toggle');
     const statusDiv = document.getElementById('status');
+    const appNameTitle = document.getElementById('app_name_text');
+
+    // Localize UI
+    appNameTitle.textContent = chrome.i18n.getMessage("extensionName");
 
     // Load saved state
     const data = await chrome.storage.local.get(['enabled']);
@@ -20,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     });
 
     function updateStatusText(enabled) {
-        statusDiv.textContent = enabled ? 'Enabled' : 'Disabled';
+        statusDiv.textContent = chrome.i18n.getMessage(enabled ? 'statusEnabled' : 'statusDisabled');
         if (enabled) {
             statusDiv.classList.add('on');
         } else {
